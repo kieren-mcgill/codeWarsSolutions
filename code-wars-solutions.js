@@ -7,3 +7,8 @@ function findNeedle(haystack) {
     }
   }
 }
+
+//The highest profit wins!
+
+const minMax = (arr) => [(Math.min.apply(null, arr)), (Math.max.apply(null, arr))];
+console.log(minMax([1, 6, 10, 45]));
