@@ -27,3 +27,13 @@ function removeSmallest(numbers) {
  }
 }
 
+//Area or perimater(8 kyu)
+
+const areaOrPerimeter = function(l , w) {
+  if (l === w) {
+    return l * w;
+  } else {
+    return 2 * (l + w);
+  }
+}
+
