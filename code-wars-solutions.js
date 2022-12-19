@@ -42,3 +42,14 @@ const areaOrPerimeter = function(l , w) {
 function checkForFactor (base, factor) {
   return base % factor === 0 ? true: false;
 }
+
+
+//What is between
+
+function between(a, b) {
+  // your code here
+  let arr = [];
+  for (let i = a; i <= b; i++) {
+    arr.push(i);
+  } return arr;
+}
