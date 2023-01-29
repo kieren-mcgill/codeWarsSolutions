@@ -77,3 +77,10 @@ function twoSum(numbers, target) {
   }
 }
 
+
+//Abbreviate a two word name (8 kyu)
+
+function abbrevName(name){
+   let nameArray = name.split(" ");
+     return `${nameArray[0][0].toUpperCase()}.${nameArray[1][0].toUpperCase()}`
+}
