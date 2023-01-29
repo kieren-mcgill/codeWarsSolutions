@@ -84,3 +84,9 @@ function abbrevName(name){
    let nameArray = name.split(" ");
      return `${nameArray[0][0].toUpperCase()}.${nameArray[1][0].toUpperCase()}`
 }
+
+//Are they the same? (6 kyu)
+
+function comp(array1, array2){
+  return array1.map(a => a*a).sort((a, b) => a - b).every((a, b) => a === array2.sort((a, b) => a - b)[b]);
+}
