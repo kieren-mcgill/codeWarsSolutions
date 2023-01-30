@@ -90,3 +90,11 @@ function abbrevName(name){
 function comp(array1, array2){
   return array1.map(a => a*a).sort((a, b) => a - b).every((a, b) => a === array2.sort((a, b) => a - b)[b]);
 }
+
+//Sentence smash
+
+function smash (words) {
+   return words.join(' ');
+};
+
+
