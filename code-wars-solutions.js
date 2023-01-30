@@ -91,10 +91,17 @@ function comp(array1, array2){
   return array1.map(a => a*a).sort((a, b) => a - b).every((a, b) => a === array2.sort((a, b) => a - b)[b]);
 }
 
-//Sentence smash
+//Sentence smash (8 kyu)
 
 function smash (words) {
    return words.join(' ');
 };
+
+
+//Keep up the hoop (8 kyu)
+
+function hoopCount (n) {
+   return n >= 10 ? "Great, now move on to tricks" : "Keep at it until you get it";    
+}
 
 
