@@ -105,3 +105,15 @@ function hoopCount (n) {
 }
 
 
+//The supermarket queue (6 kyu)
+
+function queueTime(customers, n) {
+  let tills = [];
+  for (let i = 1; i <= n; i++) {
+    tills.push(0);
+  } 
+ for (let j = 0; j < customers.length; j++) {
+   tills[tills.indexOf(Math.min(...tills))] += customers[j];
+ }
+  return tills.sort((a, b) => b - a)[0];
+}
