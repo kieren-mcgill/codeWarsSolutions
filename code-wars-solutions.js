@@ -117,3 +117,13 @@ function queueTime(customers, n) {
  }
   return tills.sort((a, b) => b - a)[0];
 }
+
+
+//Categorise new member
+
+function openOrSenior(data){
+  let memberCat = [];
+  data.forEach(member =>  member[0] >= 55 && member[1] > 7 ? 
+  memberCat.push("Senior") : memberCat.push("Open"));
+  return memberCat;
+}
