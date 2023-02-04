@@ -127,3 +127,11 @@ function openOrSenior(data){
   memberCat.push("Senior") : memberCat.push("Open"));
   return memberCat;
 }
+
+
+//Highest and lowest (7 kyu)
+
+function highAndLow(numbers){
+  let numArr = numbers.split(" ").map(str => +str);
+  return `${Math.max(...numArr)} ${Math.min(...numArr)}`;
+}
