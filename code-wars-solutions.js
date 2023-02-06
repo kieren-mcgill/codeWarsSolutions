@@ -128,6 +128,13 @@ function openOrSenior(data){
   return memberCat;
 }
 
+Double char (8 kyu)
+
+function doubleChar(str) {
+  return str.split('').map(a => `${a}${a}`).join('')
+}
+
+
 
 //Highest and lowest (7 kyu)
 
