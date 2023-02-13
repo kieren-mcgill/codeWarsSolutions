@@ -172,3 +172,11 @@ function findDifference(a, b) {
   return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
 
+
+//Regex validate PIN code
+
+function validatePIN (pin) {
+  return /^([0-9]{4}|[0-9]{6})$/.test(pin)
+}
+
+
