@@ -150,7 +150,7 @@ function gimme (triplet) {
 return (triplet.indexOf([...triplet].sort((a, b) => a - b)[1]));
 }
 
-//Make a function that does arithmetic!
+//Make a function that does arithmetic! (7 kyu)
 
 function arithmetic(a, b, operator){
   switch(operator) {
@@ -163,5 +163,12 @@ function arithmetic(a, b, operator){
       case 'divide' :
       return a /b;
   }
+}
+
+
+//Difference of volume of cuboids
+
+function findDifference(a, b) {
+  return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
 
