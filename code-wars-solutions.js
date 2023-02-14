@@ -166,7 +166,7 @@ function arithmetic(a, b, operator){
 }
 
 
-//Difference of volume of cuboids
+//Difference of volume of cuboids (7 kyu)
 
 function findDifference(a, b) {
   return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
@@ -177,6 +177,12 @@ function findDifference(a, b) {
 
 function validatePIN (pin) {
   return /^([0-9]{4}|[0-9]{6})$/.test(pin)
+}
+
+//Cockroach (8 kyu)
+
+function cockroachSpeed(s) {
+  return Math.floor(s * 1000 / 36)
 }
 
 
