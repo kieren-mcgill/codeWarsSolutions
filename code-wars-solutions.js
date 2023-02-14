@@ -185,4 +185,9 @@ function cockroachSpeed(s) {
   return Math.floor(s * 1000 / 36)
 }
 
+//Removing elements (8 kyu)
+function removeEveryOther(arr){
+  return arr.filter((a, b) => b % 2 === 0)
+}
+
 
