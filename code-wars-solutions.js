@@ -173,7 +173,7 @@ function findDifference(a, b) {
 }
 
 
-//Regex validate PIN code
+//Regex validate PIN code (7 kyu)
 
 function validatePIN (pin) {
   return /^([0-9]{4}|[0-9]{6})$/.test(pin)
@@ -186,8 +186,16 @@ function cockroachSpeed(s) {
 }
 
 //Removing elements (8 kyu)
+
 function removeEveryOther(arr){
   return arr.filter((a, b) => b % 2 === 0)
+}
+
+
+//Fake binary code (8 kyu)
+
+function fakeBin(x){
+return [...x].map(a => a < 5 ? '0' : '1').join('');
 }
 
 
