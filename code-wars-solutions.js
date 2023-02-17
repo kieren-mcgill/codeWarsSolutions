@@ -78,6 +78,20 @@ function twoSum(numbers, target) {
 }
 
 
+//Bubble sort once (7 kyu)
+
+function bubblesortOnce(a) {
+  let newA = [...a]
+  for (let i = 0; i <= newA.length - 1; i++) {
+    if (newA[i] > newA[i + 1]) {
+      let b = newA[i]
+      newA[i] = newA[i + 1]
+      newA[i + 1] = b
+    }
+  } return newA
+}
+
+
 //Abbreviate a two word name (8 kyu)
 
 function abbrevName(name){
