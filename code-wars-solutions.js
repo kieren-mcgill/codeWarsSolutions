@@ -142,7 +142,7 @@ function openOrSenior(data){
   return memberCat;
 }
 
-Double char (8 kyu)
+//Double char (8 kyu)
 
 function doubleChar(str) {
   return str.split('').map(a => `${a}${a}`).join('')
@@ -210,6 +210,13 @@ function removeEveryOther(arr){
 
 function fakeBin(x){
 return [...x].map(a => a < 5 ? '0' : '1').join('');
+}
+
+
+//Convert number to reversed array of digits
+
+function digitize(n) {
+  return n.toString().split('').reverse().map(Number)
 }
 
 
