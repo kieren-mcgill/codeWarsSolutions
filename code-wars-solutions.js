@@ -239,3 +239,12 @@ function getMiddle(s)
 }
 
 
+//Mistakes in character recognition software
+
+function correct(string)
+{
+	const error = {'0': 'O', '5': 'S', '1': 'I'}
+  return [...string].map(el => el.replace(/[0-9]/g, error[el])).join('')
+}
+
+
