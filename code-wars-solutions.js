@@ -220,10 +220,22 @@ function digitize(n) {
 }
 
 
-//Reverse words
+//Reverse words (7 kyu)
 
 function reverseWords(str) {
   return str.split(' ').map(word => word.split('').reverse().join('')).join(' ')
+}
+
+
+//Get middle character
+function getMiddle(s)
+{
+  let arr = [...s]
+  if (arr.length % 2 === 1) {
+    return s[(arr.length - 1)/2]
+  } else {
+    return [s[arr.length/2-1], s[arr.length/2]].join('')
+  }
 }
 
 
