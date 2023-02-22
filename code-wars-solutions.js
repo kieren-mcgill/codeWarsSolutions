@@ -239,7 +239,7 @@ function getMiddle(s)
 }
 
 
-//Mistakes in character recognition software
+//Mistakes in character recognition software (7 kyu)
 
 function correct(string)
 {
@@ -247,4 +247,13 @@ function correct(string)
   return [...string].map(el => el.replace(/[0-9]/g, error[el])).join('')
 }
 
+//Multiplication table
+
+multiplicationTable = function(size) {
+  let table = []
+for (let i = 1; i <= size; i++) {
+  table.push(Array.from({length: size}, (value, index) => (index + 1)*i))
+}
+  return table;
+}
 
