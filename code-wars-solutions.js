@@ -247,7 +247,7 @@ function correct(string)
   return [...string].map(el => el.replace(/[0-9]/g, error[el])).join('')
 }
 
-//Multiplication table
+//Multiplication table (6 kyu)
 
 multiplicationTable = function(size) {
   let table = []
