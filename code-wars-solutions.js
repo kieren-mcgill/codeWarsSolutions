@@ -274,3 +274,10 @@ function getSum(int1, int2)
     allIntegers.push(i)
   } return allIntegers.reduce((a, b) => a + b)
 }
+
+
+//Simple multiplication (8kyu)
+
+function simpleMultiplication(number) {
+  return number % 2 === 0 ? number*8 : number *9
+}
