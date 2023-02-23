@@ -247,4 +247,11 @@ function correct(string)
   return [...string].map(el => el.replace(/[0-9]/g, error[el])).join('')
 }
 
+//Difference between any -ve or +ve intergers (n/a)
+
+function getSum(a, b)
+{
+  return a && b ? Math.abs(a - b) : a || b ? Math.abs(a) + Math.abs(b) : Math.abs(a - b)
+}
+
 
