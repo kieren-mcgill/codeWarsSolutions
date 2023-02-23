@@ -264,3 +264,13 @@ for (let i = 1; i <= size; i++) {
   return table;
 }
 
+//Beginner Series #3 Sum of Numbers (7 kyu)
+
+function getSum(int1, int2)
+{
+  let sorted = [int1, int2].sort((a, b) => a - b)
+  let allIntegers = []
+  for (let i = sorted[0]; i <= sorted[1]; i++) {
+    allIntegers.push(i)
+  } return allIntegers.reduce((a, b) => a + b)
+}
