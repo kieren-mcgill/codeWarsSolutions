@@ -296,4 +296,13 @@ function removeChar(str){
   return str.slice(1, str.length - 1)
  
  };
+
+
+ //Write number in expanded form
+
+ function expandedForm(num) {
+  let arr = String(num).split('')
+  return expArr = arr.map((el, i) => el * Math.pow(10, arr.length - i - 1))
+  .filter(el => el > 0).join(' + ')
+}
  
