@@ -298,11 +298,21 @@ function removeChar(str){
  };
 
 
- //Write number in expanded form
+ //Write number in expanded form (6 kyu)
 
  function expandedForm(num) {
   let arr = String(num).split('')
   return expArr = arr.map((el, i) => el * Math.pow(10, arr.length - i - 1))
   .filter(el => el > 0).join(' + ')
+}
+
+
+//Mexican Wave (6 kyu)
+
+function wave(str){
+  let result = []
+  for (let i = 0; i <= str.length -1; i++) {
+    result.push(str.slice(0, i) + str.charAt(i).toUpperCase() + str.slice(i + 1))
+  } return result.filter(el => /[A-Z]/g.test(el))
 }
  
