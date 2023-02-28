@@ -325,4 +325,17 @@ function narcissistic(val) {
     .reduce((a, b) => a + b)
   return val === result
 }
+
+
+//Sum of a sequence (7 kyu)
+
+const sequenceSum = (begin, end, step) => {
+  let arr = []
+ if (begin < end) {
+   for (let i = begin; i <= end; i +=step) {
+    arr.push(i)
+  } return arr.reduce((a, b) => a + b)
+ } return 0
+};
+
  
