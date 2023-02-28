@@ -1,4 +1,4 @@
-//needle in a haystack (8 kyu)
+//A needle in a haystack (8 kyu)
 
 function findNeedle(haystack) {
   for (i = 0; i < haystack.length; i++) {
