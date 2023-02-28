@@ -64,7 +64,7 @@ findSmallestInt (args) {
 }
 
 
-Two Sum (6 kyu)
+//Two Sum (6 kyu)
 
 function twoSum(numbers, target) {
   let twoNumbers = [];
@@ -314,5 +314,15 @@ function wave(str){
   for (let i = 0; i <= str.length -1; i++) {
     result.push(str.slice(0, i) + str.charAt(i).toUpperCase() + str.slice(i + 1))
   } return result.filter(el => /[A-Z]/g.test(el))
+}
+
+
+//Narcisistic numbers (6 kyu)
+
+function narcissistic(val) {
+  let result = [...val.toString()]
+    .map((el, i, arr) => Math.pow(el, arr.length))
+    .reduce((a, b) => a + b)
+  return val === result
 }
  
