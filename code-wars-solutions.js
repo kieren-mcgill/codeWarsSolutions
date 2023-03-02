@@ -338,4 +338,9 @@ const sequenceSum = (begin, end, step) => {
  } return 0
 };
 
- 
+ //Replace with alphabet position
+
+ function alphabetPosition(text) {
+  return [...text.replace(/[^a-z]/gi, '').toUpperCase()]
+    .map((el) => el.charCodeAt(0) - 64).join(' ')
+}
