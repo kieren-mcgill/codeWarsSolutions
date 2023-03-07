@@ -338,9 +338,21 @@ const sequenceSum = (begin, end, step) => {
  } return 0
 };
 
- //Replace with alphabet position
+ //Replace with alphabet position (6 kyu)
 
  function alphabetPosition(text) {
   return [...text.replace(/[^a-z]/gi, '').toUpperCase()]
     .map((el) => el.charCodeAt(0) - 64).join(' ')
+}
+
+//Find the capitals (7 kyu)
+
+var capitals = function (word) {
+  let arr = [...word];
+  let result = [];
+  for (let i = 0; i <= arr.length; i++) {
+    if (/[A-Z]/.test(arr[i])) {
+      result.push(i);
+    }
+  } return result;
 }
