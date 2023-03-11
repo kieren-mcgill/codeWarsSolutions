@@ -356,3 +356,10 @@ var capitals = function (word) {
     }
   } return result;
 }
+
+
+// Unique in order (6kyu)
+
+var uniqueInOrder=function(iterable){
+  return [...iterable].filter((el, i, arr) => el !== arr[i + 1]); 
+}
