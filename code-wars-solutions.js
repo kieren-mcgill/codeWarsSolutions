@@ -363,3 +363,20 @@ var capitals = function (word) {
 var uniqueInOrder=function(iterable){
   return [...iterable].filter((el, i, arr) => el !== arr[i + 1]); 
 }
+
+// Rot13 (5 kyu)
+
+function rot13(message){
+    const arr = [];
+    for (let i = 0; i < message.length; i++) {
+        const cCode = message.charCodeAt(i);
+        cCode >= 97 && cCode <= 109 ||
+        cCode >= 65 && cCode <= 77 ?
+            arr.push(cCode + 13) :
+            cCode >= 110 && cCode <= 122 ||
+            cCode >= 78 && cCode <= 90 ?
+                arr.push(cCode - 13) :
+                arr.push(cCode);
+    } return arr.map(code => String.fromCharCode(code)).join('');
+}
+
