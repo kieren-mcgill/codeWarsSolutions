@@ -380,3 +380,14 @@ function rot13(message){
     } return arr.map(code => String.fromCharCode(code)).join('');
 }
 
+// Multiples of 3 of 5 (6 kyu)
+
+function solution(n){
+    if (n > 3) {
+        return Array.from({ length: n-1 }, (v, i) => i+1)
+            .filter(v => v%3 === 0 || v%5 === 0)
+            .reduce((a, b) => a + b);
+    } else {
+        return 0;
+    }
+}
