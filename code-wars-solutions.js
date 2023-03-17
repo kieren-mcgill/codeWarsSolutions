@@ -391,3 +391,65 @@ function solution(n){
         return 0;
     }
 }
+
+//Add length (8 kyu)
+
+function addLength(str) {
+    return str.split(" ").map((el, i) => `${el} ${(el.length)}`);
+}
+
+//Counting sheep... (8 kyu)
+function countSheep(arrayOfSheep) {
+    return arrayOfSheep.filter(sheep => sheep).length;
+}
+
+//A feast of many beasts (8 kyu)
+
+function feast(beast, dish) {
+    return beast.charAt(0) === dish.charAt(0) &&
+        beast.charAt(beast.length - 1) === dish.charAt(dish.length - 1);
+}
+
+//Welcome! (8 kyu)
+
+function greet(language) {
+    const welcomeTrans = {
+        english: 'Welcome',
+        czech: 'Vitejte',
+        danish: 'Velkomst',
+        dutch: 'Welkom',
+        estonian: 'Tere tulemast',
+        finnish: 'Tervetuloa',
+        flemish: 'Welgekomen',
+        french: 'Bienvenue',
+        german: 'Willkommen',
+        irish: 'Failte',
+        italian: 'Benvenuto',
+        latvian: 'Gaidits',
+        lithuanian: 'Laukiamas',
+        polish: 'Witamy',
+        spanish: 'Bienvenido',
+        swedish: 'Valkommen',
+        welsh: 'Croeso'
+    }
+    return welcomeTrans[language] || welcomeTrans.english;
+}
+
+//Find the first non-consecutive number (8kyu)
+
+function firstNonConsecutive (arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] - arr[i-1] !== 1) {
+            return arr[i];
+        }
+    }return null;
+}
+
+//Super Duper Easy (8 kyu)
+function problem(x){
+    if (typeof x === "number") {
+        return (x*50) + 6;
+    } else {
+        return "Error";
+    }
+}
