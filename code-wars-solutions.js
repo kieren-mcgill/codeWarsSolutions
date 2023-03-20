@@ -453,3 +453,11 @@ function problem(x){
         return "Error";
     }
 }
+
+//Two to one (7kyu)
+function longest(s1, s2) {
+    return [...(s1 + s2)]
+        .sort()
+        .filter((el, i, arr) => el !== arr[i+1])
+        .join('')
+}
