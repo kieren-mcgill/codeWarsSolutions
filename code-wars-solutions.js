@@ -454,6 +454,12 @@ function problem(x){
     }
 }
 
+// 5 without numbers (8 kyu)
+
+function unusualFive() {
+    return "abcde".length;
+}
+
 //Two to one (7kyu)
 function longest(s1, s2) {
     return [...(s1 + s2)]
@@ -461,3 +467,46 @@ function longest(s1, s2) {
         .filter((el, i, arr) => el !== arr[i+1])
         .join('')
 }
+
+//Is this a triangle? (7 kyu)
+
+function isTriangle(a,b,c)
+{
+    return  a + b > c && b + c > a && a + c > b;
+}
+
+//The wide mouthed frog! (8 kyu)
+
+function mouthSize(animal) {
+    return animal === "alligator" ? "small" : "wide";
+}
+
+//Remove string spaces (8kyu)
+
+function noSpace(x){
+    return [...x].filter(a => a !==' ').join('')
+}
+
+//Anagram detection (7 kyu)
+var isAnagram = function(test, original) {
+    return [...test.toLowerCase()].sort().join('')
+        === [...original.toLowerCase()].sort().join('');
+};
+
+ //Factorial (7 kyu)
+
+function factorial(n)
+{
+    const arr = [];
+    if (n === 0) {
+        return 1
+    } else if (n < 0 || n > 12) {
+        throw new RangeError('Range Error');
+    } else {
+        for (let i = 1; i <= n; i++) {
+            arr.push(i);
+        }
+        return arr.reduce((a, b) => a*b);
+    }
+}
+
